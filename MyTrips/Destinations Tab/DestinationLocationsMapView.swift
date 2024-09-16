@@ -10,10 +10,12 @@
 
 
 import SwiftUI
+import MapKit
 
 struct DestinationLocationsMapView: View {
+    @State private var cameraPosition: MapCameraPosition = .automatic
     var body: some View {
-        Text("Destination Locations Map!")
+        Map()
     }
 }
 
